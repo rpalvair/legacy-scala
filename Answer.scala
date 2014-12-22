@@ -10,15 +10,22 @@ class Answer {
   }
 }
 
-object Answer {
+object Answer extends App {
 
-  def main(args: Array[String]): Unit = {
+  val answer = new Answer
+  if (args.length > 0) {
+    answer.answer(args(0))
+  } else {
+    answer.answer(null)
+  }
+
+  /*def main(args: Array[String]): Unit = {
     val answer = new Answer
     if (args.length > 0) {
       answer.answer(args(0))
     } else {
       answer.answer(null)
     }
-  }
+  }*/
 
 }
