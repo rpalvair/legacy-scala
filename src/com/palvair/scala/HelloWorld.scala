@@ -5,4 +5,7 @@ package com.palvair.scala
  */
 class HelloWorld {
 
+  def answer(): Unit = {
+    println("You called me?");
+  }
 }
