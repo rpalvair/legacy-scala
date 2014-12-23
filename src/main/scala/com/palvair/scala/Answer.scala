@@ -22,7 +22,7 @@ object Answer extends App {
   }
 
   /*def main(args: Array[String]): Unit = {
-    val answer = new com.palvair.scala.Answer
+    val answer = new main.scala.scala.Answer
     if (args.length > 0) {
       answer.answer(args(0))
     } else {

@@ -7,7 +7,7 @@ Call scala object :
 
 compilation :
 
-scalac -d classes src/com/palvair/scala/*
+scalac -d classes src/main/scala/com/palvair/scala/*
 
 execution :
 cd classes
