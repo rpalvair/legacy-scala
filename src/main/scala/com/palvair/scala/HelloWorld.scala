@@ -25,9 +25,12 @@ class HelloWorld {
   }
 }
 
-object HelloWorld extends App {
-  val helloWorld = new HelloWorld
-  helloWorld.answer()
-  helloWorld.readFile()
-  helloWorld.callListLearner()
+object HelloWorld {
+  def main(args: Array[String]): Unit = {
+    val helloWorld = new HelloWorld
+    helloWorld.answer()
+    helloWorld.readFile()
+    helloWorld.callListLearner()
+  }
+
 }

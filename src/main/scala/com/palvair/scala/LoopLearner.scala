@@ -43,20 +43,24 @@ class LoopLearner {
   }
 }
 
-object LoopLearner extends App {
+object LoopLearner {
 
-  val loopLearner = new LoopLearner
-  if (args.length > 0) {
-    loopLearner.executeWhile(args)
-    loopLearner.executeFor(args)
-    loopLearner.executeFor2(args)
-    loopLearner.executeForEach(args)
-  } else {
-    loopLearner.executeWhile(null)
-    loopLearner.executeFor(null)
-    loopLearner.executeFor2(null)
-    loopLearner.executeForEach(null)
+  def main(args: Array[String]): Unit = {
+    val loopLearner = new LoopLearner
+    if (args.length > 0) {
+      loopLearner.executeWhile(args)
+      loopLearner.executeFor(args)
+      loopLearner.executeFor2(args)
+      loopLearner.executeForEach(args)
+    } else {
+      loopLearner.executeWhile(null)
+      loopLearner.executeFor(null)
+      loopLearner.executeFor2(null)
+      loopLearner.executeForEach(null)
+    }
   }
+
+
 }
 
 

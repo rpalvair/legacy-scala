@@ -50,11 +50,15 @@ class ListLearner {
   }
 }
 
-object ListLearner extends App {
-  val listLearner = new ListLearner
-  listLearner.parameterizeArray()
-  listLearner.arrayInitialization()
-  listLearner.initList()
-  listLearner.listConcatenation()
-  listLearner.listPrepend("Widdy says : ")
+object ListLearner {
+
+  def main(args: Array[String]): Unit = {
+    val listLearner = new ListLearner
+    listLearner.parameterizeArray()
+    listLearner.arrayInitialization()
+    listLearner.initList()
+    listLearner.listConcatenation()
+    listLearner.listPrepend("Widdy says : ")
+  }
+
 }
