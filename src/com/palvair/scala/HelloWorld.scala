@@ -9,3 +9,8 @@ class HelloWorld {
     println("You called me?");
   }
 }
+
+object HelloWorld extends App {
+  val helloWorld = new HelloWorld
+  helloWorld.answer()
+}

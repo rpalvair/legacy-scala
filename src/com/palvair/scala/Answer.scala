@@ -1,4 +1,4 @@
-
+package com.palvair.scala
 
 class Answer {
   def answer(name: String): Unit = {
@@ -10,6 +10,8 @@ class Answer {
   }
 }
 
+
+
 object Answer extends App {
 
   val answer = new Answer
@@ -20,7 +22,7 @@ object Answer extends App {
   }
 
   /*def main(args: Array[String]): Unit = {
-    val answer = new Answer
+    val answer = new com.palvair.scala.Answer
     if (args.length > 0) {
       answer.answer(args(0))
     } else {
