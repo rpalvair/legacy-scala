@@ -1,6 +1,5 @@
 package com.palvair.scala
 
-import main.scala.com.palvair.scala.CustomFileReader
 
 /**
  * Created by rpalvair on 19/12/2014.

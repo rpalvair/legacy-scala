@@ -1,4 +1,4 @@
-package main.scala.com.palvair.scala
+package com.palvair.scala
 
 import scala.io.Source._
 
