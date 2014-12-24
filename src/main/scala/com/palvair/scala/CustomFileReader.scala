@@ -18,11 +18,11 @@ class CustomFileReader {
   def getSource(fileName: String): Source = {
     try {
       val url = getClass.getClassLoader.getResource(fileName)
-      return Source.fromURL(url)
+      Source.fromURL(url)
     } catch {
       case e: Exception => {
         println(e.getMessage)
-        return Source.fromFile("../" + fileName)
+        Source.fromFile("../" + fileName)
       }
     }
   }
