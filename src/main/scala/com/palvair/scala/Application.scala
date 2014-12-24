@@ -24,5 +24,10 @@ object Application extends App {
   val answer: Answer = new Answer
   answer.answer("Widdy")
   println("===============================")
+  println("Run LoopLearner")
+  println("===============================")
+  val loopLearner: LoopLearner = new LoopLearner
+  loopLearner.executeForEach(Array("I", "Like", "Scala"))
+  println("===============================")
   println("Destroying application...")
 }

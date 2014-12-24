@@ -4,9 +4,9 @@ class ListLearner {
   def parameterizeArray(): Unit = {
     println("[parameterizeArray]")
     val array = new Array[String](3)
-    array.update(0, "Salut")
-    array.update(1, "mon")
-    array.update(2, "pote")
+    array.update(0, "I")
+    array.update(1, "Like")
+    array.update(2, "Scala")
     for (i <- 0.to(array.length - 1)) {
       println(array.apply(i))
     }
@@ -14,7 +14,7 @@ class ListLearner {
 
   def arrayInitialization(): Unit = {
     println("[arrayInitialization]")
-    val array = Array.apply("Salut", "mon", "pote");
+    val array = Array.apply("I", "Like", "Scala");
     for (i <- 0.to(array.length - 1)) {
       println(array(i))
     }
@@ -22,7 +22,7 @@ class ListLearner {
 
   def initList(): Unit = {
     println("[initList]")
-    val list = List("Salut", "mon", "pote")
+    val list = List("I", "Like", "Scala")
     for (item <- list) {
       println(item)
     }
@@ -30,8 +30,8 @@ class ListLearner {
 
   def listConcatenation(): Unit = {
     println("[listConcatenation]")
-    val list = List("Salut", "mon", "pote")
-    val additional = List("Comment", "vas", "-", "tu", "?")
+    val list = List("I", "Like", "Scala")
+    val additional = List(",", "Scala", "Is", "Better", "Than", "Java")
     val concat = list ::: additional;
     for (item <- concat) {
       println(item)
@@ -41,7 +41,7 @@ class ListLearner {
   def listPrepend(valueToPrepend: String): Unit = {
     println("[listPreprend]")
     println("valueToPrepend = " + valueToPrepend)
-    val list = List("Salut", "mon", "pote")
+    val list = List("I", "Like", "Scala")
     val result = valueToPrepend :: list
     for (item <- result) {
       println(item)
