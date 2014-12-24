@@ -1,4 +1,6 @@
-package com.palvair.scala
+
+
+package com.palvair.scala {
 
 
 /**
@@ -12,7 +14,7 @@ class HelloWorld {
 
   def readFile(): Unit = {
     val reader = new CustomFileReader
-    reader.readFile("../README.md")
+    reader.readFile("README.md")
   }
 
   def callListLearner(): Unit = {
@@ -34,3 +36,8 @@ object HelloWorld {
   }
 
 }
+
+}
+
+
+

@@ -1,4 +1,4 @@
-package com.palvair.scala
+package com.palvair.scala {
 
 class Answer {
   def answer(name: String): Unit = {
@@ -33,3 +33,6 @@ object Answer {
   }*/
 
 }
+
+}
+

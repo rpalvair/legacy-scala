@@ -1,5 +1,4 @@
-package com.palvair.scala
-
+package com.palvair.scala {
 
 /**
  * Created by rpalvair on 22/12/2014.
@@ -62,5 +61,10 @@ object LoopLearner {
 
 
 }
+
+}
+
+
+
 
 

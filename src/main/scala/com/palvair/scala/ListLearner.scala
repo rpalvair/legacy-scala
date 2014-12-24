@@ -1,5 +1,4 @@
-package com.palvair.scala
-
+package com.palvair.scala {
 
 class ListLearner {
   def parameterizeArray(): Unit = {
@@ -62,3 +61,7 @@ object ListLearner {
   }
 
 }
+
+}
+
+
