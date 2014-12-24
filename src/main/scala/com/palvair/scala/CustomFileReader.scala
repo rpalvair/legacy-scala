@@ -8,22 +8,24 @@ package com.palvair.scala {
  */
 class CustomFileReader {
   def readFile(fileName: String): Unit = {
-    var source: Source = null
-    try {
-      val url = getClass.getClassLoader.getResource(fileName)
-      source = Source.fromURL(url)
-    } catch {
-      case e: Exception => {
-        println(e.getMessage)
-        source = Source.fromFile("../" + fileName)
-      }
-    }
+    val source: Source = getSource(fileName)
     val lines = source.getLines()
     for (line <- lines) {
       println("line = [" + line + "]")
     }
   }
 
+  def getSource(fileName: String): Source = {
+    try {
+      val url = getClass.getClassLoader.getResource(fileName)
+      return Source.fromURL(url)
+    } catch {
+      case e: Exception => {
+        println(e.getMessage)
+        return Source.fromFile("../" + fileName)
+      }
+    }
+  }
 }
 
 }
