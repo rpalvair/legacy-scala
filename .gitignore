@@ -4,3 +4,5 @@
 out/**
 classes/**
 target/**
+.gradle/**
+build/**

@@ -17,7 +17,10 @@ object Application extends App {
   println("Run CustomFileReader...")
   println("===============================")
   val customFileReader: CustomFileReader = new CustomFileReader
-  customFileReader.readFile("README.md")
+  if (args != null && args.length > 0) {
+    customFileReader.readFile(args(0))
+  }
+
   println("===============================")
   println("Run Answer")
   println("===============================")
