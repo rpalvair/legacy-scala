@@ -6,6 +6,7 @@ class Answer {
     if (name != null && name.length > 0) {
       message += name
     }
+    message += " ?"
     println(message)
   }
 }

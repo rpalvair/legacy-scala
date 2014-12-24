@@ -12,3 +12,8 @@ scalac -d classes src/main/scala/com/palvair/scala/*
 execution :
 cd classes
 scala com.palvair.scala.HelloWorld
+
+run maven compilated classes :
+
+cd target/classes
+scala com.palvair.scala.Application
