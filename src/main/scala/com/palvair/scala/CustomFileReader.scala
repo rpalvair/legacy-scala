@@ -8,7 +8,7 @@ package com.palvair.scala {
  */
 class CustomFileReader {
   def readFile(fileName: String): Unit = {
-    val source: Source = getSource(fileName)
+    val source: Source = this.getSource(fileName)
     val lines = source.getLines()
     for (line <- lines) {
       println("line = [" + line + "]")
