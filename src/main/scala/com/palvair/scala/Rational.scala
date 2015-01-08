@@ -5,6 +5,7 @@ package com.palvair.scala
  */
 class Rational(n: Int, d: Int) {
   require(d != 0)
+  println("creating new rational")
   val numer: Int = n
   val denom: Int = d
 

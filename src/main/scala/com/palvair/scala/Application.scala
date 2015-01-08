@@ -46,5 +46,8 @@ object Application extends App {
   val or = bitwiseOperations.or(2, 1)
   println("result = " + or)
   println("===============================")
+  val rational = new Rational(1, 5)
+  println("rational = " + rational)
+  println("===============================")
   println("Destroying application...")
 }
