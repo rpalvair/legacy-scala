@@ -5,11 +5,13 @@ package com.palvair.scala
  */
 class BitwiseOperations {
 
-  def shiftLeft() = {
-
+  def shiftLeft(source: Int, shift: Int): Int = {
+    println("Running shilfLetf : " + source + " << " + shift)
+    source << shift
   }
 
-  def shiftRight = {
-
+  def shiftRight(source: Int, shift: Int): Int = {
+    println("Running shiftRight : " + source + " >> " + shift)
+    source >> shift
   }
 }

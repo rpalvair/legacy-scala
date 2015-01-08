@@ -31,6 +31,14 @@ object Application extends App {
   println("===============================")
   val loopLearner: LoopLearner = new LoopLearner
   loopLearner.executeForEach(Array("I", "Like", "Scala"))
+
+  val bitwiseOperations = new BitwiseOperations
+  println("===============================")
+  val shifLeft = bitwiseOperations.shiftLeft(1, 2)
+  println("result = " + shifLeft)
+  println("===============================")
+  val shiftRight = bitwiseOperations.shiftRight(2, 1)
+  println("result = " + shiftRight)
   println("===============================")
   println("Destroying application...")
 }
