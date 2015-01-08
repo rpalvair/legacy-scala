@@ -40,5 +40,11 @@ object Application extends App {
   val shiftRight = bitwiseOperations.shiftRight(2, 1)
   println("result = " + shiftRight)
   println("===============================")
+  val and = bitwiseOperations.and(2, 1)
+  println("result = " + and)
+  println("===============================")
+  val or = bitwiseOperations.or(2, 1)
+  println("result = " + or)
+  println("===============================")
   println("Destroying application...")
 }
