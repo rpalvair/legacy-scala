@@ -5,49 +5,31 @@ package com.palvair.scala
  */
 object Application extends App {
   println("Running application...")
-  println("===============================")
-  println("Run ListLearner...")
-  println("===============================")
   val listLearner: ListLearner = new ListLearner
   listLearner.arrayInitialization()
   listLearner.initList()
   listLearner.listConcatenation()
   listLearner.parameterizeArray()
-  println("===============================")
-  println("Run CustomFileReader...")
-  println("===============================")
+
   val customFileReader: CustomFileReader = new CustomFileReader
   if (args != null && args.length > 0) {
     customFileReader.readFile(args(0))
   }
-
-  println("===============================")
-  println("Run Answer")
-  println("===============================")
   val answer: Answer = new Answer
   answer.answer("Widdy")
-  println("===============================")
-  println("Run LoopLearner")
-  println("===============================")
   val loopLearner: LoopLearner = new LoopLearner
   loopLearner.executeForEach(Array("I", "Like", "Scala"))
-
   val bitwiseOperations = new BitwiseOperations
-  println("===============================")
   val shifLeft = bitwiseOperations.shiftLeft(1, 2)
-  println("result = " + shifLeft)
-  println("===============================")
   val shiftRight = bitwiseOperations.shiftRight(2, 1)
-  println("result = " + shiftRight)
-  println("===============================")
   val and = bitwiseOperations.and(2, 1)
-  println("result = " + and)
-  println("===============================")
   val or = bitwiseOperations.or(2, 1)
-  println("result = " + or)
-  println("===============================")
   val rational = new Rational(1, 5)
   println("rational = " + rational)
+  println("===============================")
+  val lambdaLearner = new LambdasLearner
+  val result = lambdaLearner.apply("billy",_.toUpperCase)
+  println("lambdaResult = "+result)
   println("===============================")
   println("Destroying application...")
 }
