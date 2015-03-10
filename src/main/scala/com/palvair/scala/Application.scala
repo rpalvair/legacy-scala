@@ -28,11 +28,11 @@ object Application extends App {
   println("rational = " + rational)
   println("===============================")
   val lambdaLearner = new LambdasLearner
-  val result = lambdaLearner.apply("billy",_.toUpperCase)
-  println("lambdaResult = "+result)
-  val partialApplyFunction = lambdaLearner.apply("billy",_: String => String)
+  val result = lambdaLearner.apply("billy", _.toUpperCase)
+  println("lambdaResult = " + result)
+  val partialApplyFunction = lambdaLearner.apply("billy", _: String => String)
   val partialApplyResult = partialApplyFunction(_.concat("_concat"))
-  println("partialApplyResult = "+partialApplyResult)
+  println("partialApplyResult = " + partialApplyResult)
   println("===============================")
   println("Destroying application...")
 }
